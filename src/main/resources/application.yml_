@@ -1,0 +1,5 @@
+spring:
+  redis:
+    host: 211.219.129.122
+    port: 8081
+    database: 0
