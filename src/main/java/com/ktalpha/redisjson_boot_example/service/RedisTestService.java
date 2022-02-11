@@ -63,7 +63,7 @@ public class RedisTestService implements CommandLineRunner, RedisTestServiceImpl
             }
 
             key = "test_0211";
-            stringRedisTemplate.opsForValue().set("test_0211","{\"test\":\"test2011\"}");
+            //stringRedisTemplate.opsForValue().set("test_0211","{\"test\":\"test2011\"}");
 
             primaryKeyValue = stringRedisTemplate.opsForValue().get(key);
             logger.info(String.format("key %s value is %s", key, primaryKeyValue));
